@@ -23,64 +23,6 @@ repositories {
     mavenCentral()
 }
 
-//dependencies {
-//    implementation("io.ktor:ktor-server-core-jvm")
-//    implementation("io.ktor:ktor-server-netty-jvm")
-//    implementation("ch.qos.logback:logback-classic:$logback_version")
-//    implementation("io.ktor:ktor-server-config-yaml")
-//    implementation("io.ktor:ktor-server-core:1.6.7")
-//    implementation("io.ktor:ktor-server-netty:1.6.7")
-//    implementation("io.ktor:ktor-gson:1.6.7")
-//    implementation("io.ktor:ktor-client-core:1.6.7")
-//    implementation("io.ktor:ktor-client-json:1.6.7")
-//    implementation("io.ktor:ktor-client-logging:1.6.7")
-//    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
-//    implementation("io.ktor:ktor-client-cio:1.6.7")
-//    implementation("io.ktor:ktor-serialization:1.7.5")
-//    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
-//    implementation("org.litote.kmongo:kmongo-coroutine:4.4.0")
-//    implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
-//
-//
-//
-//    implementation("org.mongodb:mongodb-driver-kotlin-coroutine:5.1.1")
-//
-//    implementation("org.litote.kmongo:kmongo-serialization:4.4.0")
-//    implementation("io.ktor:ktor-server-content-negotiation:2.3.12")
-//    implementation("redis.clients:jedis:3.7.1")
-//
-//
-//
-//    implementation("io.ktor:ktor-client-serialization:1.6.7")
-//    implementation("org.mongodb:mongodb-driver-sync:4.3.3")
-//
-//            testImplementation("io.ktor:ktor-server-tests-jvm")
-//
-//        testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-//        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-//        testImplementation("io.mockk:mockk:1.12.0")
-//        // Add other dependencies as needed
-//    testImplementation("io.ktor:ktor-server-tests:2.1.0")
-//    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.21")
-//    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-//    testImplementation("org.jacoco:org.jacoco.core:0.8.7")
-//    testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.21")
-////    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.6.21")
-//    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.21")
-//
-//    // Ktor testing dependencies
-//    testImplementation("io.ktor:ktor-server-test-host:1.6.21")
-//    testImplementation("io.ktor:ktor-client-mock:1.6.21")
-//    testImplementation("io.ktor:ktor-client-mock:1.6.21")
-//
-//    // Jacoco for test coverage reporting
-//    testImplementation("io.ktor:ktor-client-mock:1.6.21")
-//    testImplementation("io.ktor:ktor-client-mock:1.6.21")
-//
-//    implementation("io.mockk:mockk:1.12.0") // Replace with the latest version
-//
-//    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
-//}
 dependencies {
     implementation("io.ktor:ktor-server-core:1.6.7")
     implementation("io.ktor:ktor-server-netty:1.6.7")
@@ -116,32 +58,24 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("io.ktor:ktor-server-tests-jvm")
 
-    // Jacoco for test coverage reporting
     testImplementation("org.jacoco:org.jacoco.core:0.8.7")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.21")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.6.21")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.21")
-    // Kotlin and Kotlin test dependencies
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21")
-//    implementation("io.dapr:dapr-sdk-java:0.12.3") // Replace with an available version
+    implementation("io.dapr:dapr-sdk:1.0.0") // Use the latest version available
 
 
-    // Ktor testing dependencies
     testImplementation("io.ktor:ktor-server-tests:2.1.0")
     testImplementation("io.ktor:ktor-server-test-host:1.6.21")
     testImplementation("io.ktor:ktor-client-mock:1.6.21")
 
-    // JUnit Jupiter dependencies
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 
-    // Jacoco for test coverage reporting
     testImplementation("org.jacoco:org.jacoco.core:0.8.7")
-//    testImplementation("org.mockito.kotlin:mockito-kotlin:4.2.0")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.0")
-
-    // MockK for mocking
     testImplementation("io.mockk:mockk:1.12.0")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlin_version") {
         exclude(group = "org.jetbrains.kotlin", module = "kotlin-test-junit")
