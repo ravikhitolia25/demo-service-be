@@ -1,0 +1,24 @@
+ktor:
+    application:
+        modules:
+            - example.com.ApplicationKt.module
+    deployment:
+        port: 8080
+        host: localhost
+    database:
+        type: mongodb
+        uri: mongodb://localhost:27017
+        name: demo-service
+    server:
+        compression:
+            enabled: true
+        content-negotiation:
+            json: true
+    security:
+        basic:
+            realm: "Ktor Server"
+    logging:
+        level: INFO
+    environment:
+        development: true
+
